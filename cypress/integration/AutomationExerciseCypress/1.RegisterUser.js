@@ -16,7 +16,7 @@ describe("Open", function(){
         cy.contains('New User Signup!').should('be.visible');
         //6. Enter name and email address
         cy.get('input[type="text"]').type('Ana-Maria');
-        cy.get('.signup-form > form > [type="email"]').type('mariatest1511@yahoo.com');
+        cy.get('.signup-form > form > [type="email"]').type('mariatest2000@yahoo.com');
         //7. Click 'Signup' button
         cy.get('.signup-form > form > .btn').click();
         //8. Verify that 'ENTER ACCOUNT INFORMATION' is visible
@@ -24,7 +24,7 @@ describe("Open", function(){
         //9. Fill details: Title, Name, Email, Password, Date of birth
         cy.get('#id_gender2').check();
         cy.get('#name').should('have.value','Ana-Maria');
-        cy.get('#email').should('have.value','mariatest1511@yahoo.com');
+        cy.get('#email').should('have.value','mariatest2000@yahoo.com');
         cy.get('#email').should('have.disabled','disabled');
         cy.get('#password').type('test123');
         cy.get('#days').select(24);
