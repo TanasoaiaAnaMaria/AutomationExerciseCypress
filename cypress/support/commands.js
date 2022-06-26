@@ -14,9 +14,9 @@ Cypress.Commands.add("LogIN_is_possible",() => {
         cy.get('a > img').should('be.visible');
         //Click on 'Signup / Login' button
         cy.get('.shop-menu > .nav > :nth-child(4) > a').should('be.visible').click();
-        //Verify 'New User Signup!' is visible
+        //Verify 'Login to your account' is visible
         cy.contains('Login to your account').should('be.visible');
-        //the credentials for login can be inserted
+        //The credentials for login can be inserted
         cy.get('.login-form > form > [type="email"]').should('not.be.disabled');
         cy.get('.login-form > form > [type="email"]').should('not.be.disabled');
 })
