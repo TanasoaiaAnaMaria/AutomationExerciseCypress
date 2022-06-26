@@ -1,4 +1,4 @@
-describe("Open", function(){
+describe("Register Existing User", function(){
     before(function(){
         cy.Launch_the_website()
     })

@@ -1,4 +1,4 @@
-describe("Login succesfuly", function(){
+describe("Login failed", function(){
     before(function(){
         
         cy.Launch_the_website()
