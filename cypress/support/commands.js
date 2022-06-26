@@ -20,3 +20,13 @@ Cypress.Commands.add("LogIN_is_possible",() => {
         cy.get('.login-form > form > [type="email"]').should('not.be.disabled');
         cy.get('.login-form > form > [type="email"]').should('not.be.disabled');
 })
+
+Cypress.Commands.add("Enter_correct_credentials",() => {
+        //Enter correct email address and password
+        cy.get('.login-form > form > [type="email"]').type('mariatest1511@yahoo.com');
+        cy.get('[type="password"]').type('test123');
+        //Click 'login' button
+        cy.get('.login-form > form > .btn').click();
+        //Verify that 'Logged in as username' is visible
+        cy.contains('Logged in as Ana-Maria').should('be.visible');
+})
