@@ -1,4 +1,4 @@
-describe("Add Products In Cart", function(){
+describe("Place Order Register While Checkout", function(){
     before(function(){
         cy.Launch_the_website()
     })

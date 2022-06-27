@@ -1,4 +1,4 @@
-describe("Add Products In Cart", function(){
+describe("Veryfy Product Quantity In Cart", function(){
     before(function(){
         cy.Launch_the_website()
     })
