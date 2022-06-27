@@ -19,7 +19,14 @@ describe("ContactUsForm", function(){
         cy.get(':nth-child(6) > .form-control').selectFile("cypress/fixtures/test.docx");
         //8. Click 'Submit' button
         cy.get(':nth-child(7) > .btn').click();
-        //9. Click OK button  ??????
+        //9. Click OK button 
+        it('should trigger an alert with a message', () => {
+            cy.get('#alert-button').click();
+        
+            cy.on('window:alert', (text) => {
+              expect(text).to.contains('Press OK to proceed!');
+            });
+        });
         //10. Verify success message 'Success! Your details have been submitted successfully.' is visible
         cy.get('.status').contains('Success! Your details have been submitted successfully.');
         //11. Click 'Home' button and verify that landed to home page successfully
