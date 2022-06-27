@@ -1,4 +1,4 @@
-describe("Subscription In Home Page", function(){
+describe("Subscription In Cart Page", function(){
     before(function(){
         cy.Launch_the_website()
     })
