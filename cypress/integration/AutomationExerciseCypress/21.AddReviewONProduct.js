@@ -3,7 +3,6 @@ describe("Add Review ON Product", function(){
         cy.Launch_the_website()
     })
     it("open",function() {
-        var nr = 0;
         // 3. Click on 'Products' button
         cy.get('.shop-menu > .nav > :nth-child(2) > a').click();
         // 3. Click on 'Products' button

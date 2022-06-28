@@ -17,12 +17,10 @@ describe("Search Products And Verify Cart After LogIN", function(){
                 cy.wrap(list[index]).then(($rasp)=>{
                     if($rasp.text().includes('Top'))
                         nr++;
-                        console.log(nr+" wwwwwwwwwwwwwwwwwww");
                 })
             }
-                
         })
-        console.log(nr+"xxxxxxxxxxxxxxxxxxxxx");
+        
         cy.get('#submit_search').click();
         // 6. Verify 'SEARCHED PRODUCTS' is visible
         cy.contains('Searched Products');

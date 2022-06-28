@@ -32,14 +32,14 @@ Cypress.Commands.add("Enter_correct_credentials",() => {
 })
 
 Cypress.Commands.add("Signup",() => {
-        //inserting the URL
+        /* //inserting the URL
         cy.visit('https://automationexercise.com/')
         //verify if the page title is Automation Exercise
         cy.title().should('eq','Automation Exercise')
         //verify the protocol of the page
         cy.location('protocol').should('eq','https:')
         //verify the title of the page
-        cy.title().should('eq','Automation Exercise')
+        cy.title().should('eq','Automation Exercise') */
         //3. Verify that home page is visible successfully
         cy.get('a > img').should('be.visible');
         //4. Click on 'Signup / Login' button
@@ -48,7 +48,7 @@ Cypress.Commands.add("Signup",() => {
         cy.contains('New User Signup!').should('be.visible');
         //6. Enter name and email address
         cy.get('input[type="text"]').type('Ana-Maria');
-        cy.get('.signup-form > form > [type="email"]').type('mariatest'+Math.floor(Math.random() * 100)+'@yahoo.com');
+        cy.get('.signup-form > form > [type="email"]').type('mariatest'+Math.floor(Math.random() * 1000)+'@yahoo.com');
         //7. Click 'Signup' button
         cy.get('.signup-form > form > .btn').click();
         //8. Verify that 'ENTER ACCOUNT INFORMATION' is visible
