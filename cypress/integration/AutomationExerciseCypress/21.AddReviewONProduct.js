@@ -1,4 +1,4 @@
-describe("View And Cart Brand Products", function(){
+describe("Add Review ON Product", function(){
     before(function(){
         cy.Launch_the_website()
     })

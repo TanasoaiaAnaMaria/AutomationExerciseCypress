@@ -1,4 +1,4 @@
-describe("View And Cart Brand Products", function(){
+describe("Search Products And Verify Cart After LogIN", function(){
     before(function(){
         cy.Launch_the_website()
     })
